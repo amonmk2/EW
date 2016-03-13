@@ -1,0 +1,22 @@
+# stage1
+
+ERROR001 error message stage1 1.
+ERROR001 error message stage1 2.
+WARNING001 warning meaage stage1 1.
+WARNING002 warning meaage stage1 2.
+
+# stage2
+
+ERROR001 error message stage2 1.
+ERROR001 error message stage2 2.
+WARNING001 warning meaage stage2 1.
+WARNING002 warning meaage stage2 2.
+WARNING001 warning meaage stage2 1.
+
+# stage3
+
+ERROR001 error message stage3 1.
+ERROR001 error message stage3 2.
+WARNING001 warning meaage stage3 1.
+WARNING002 warning meaage stage3 2.
+
