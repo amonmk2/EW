@@ -1,0 +1,21 @@
+p{
+    font-size:20px;
+}
+
+table.sample1 {
+    width: 100%;
+    margin:20px 0px 50px;
+    border-top: 1px solid #CCC;
+    border-left: 1px solid #CCC;
+    border-spacing:0px;
+    font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Garuda';
+}
+table.sample1 tr th,table.sample1 tr td {　/*「,（カンマ）」で区切って複数のセレクタを指定しています*/
+    font-size: 10px;
+    border-bottom: 1px solid #CCC;
+    border-right: 1px solid #CCC;
+    padding: 7px;
+}
+table.sample1 tr th {
+    background: #E6EAFF;
+}

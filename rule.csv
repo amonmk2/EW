@@ -1,3 +1,3 @@
-stage1,ERROR001
-stage2,WARNING001
-stage3,WARNING002
+stage1,ERROR001,message E001 ignore,これは無視できるエラーメッセージです
+stage2,WARNING001,message W002 ignore,これは無視できるワーニングメッセージです
+stage3,WARNING002,message W002 ignore,これは注意するワーニングメッセージです。確認してください。
