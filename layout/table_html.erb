@@ -1,0 +1,33 @@
+
+<h1><%= "#{stage}"%></h1>
+<table class="sample1">
+
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>E-Mail</th>
+      <th>Address</th>
+      <th>Comment</th>
+    </tr>
+  </thead>
+
+  <%- @hash[stage].each_key { |ew| -%>
+  <%-    next unless (@mode == "all" || ew == @mode ) -%>
+    <%- @hash[stage][ew].each_key { |code| -%>
+      <%- @hash[stage][ew][code].each_with_index { |msg,i| -%>
+  <tbody>
+   <tr> 
+        <%- if (@rule[stage][code][0]) -%>
+          <td><%= "#{@rule[stage][code][0]}" %></a> </td>
+        <%- else -%>
+          <td><%= "NG" %></a> </td>
+        <%- end -%>
+        <td> <a href="<%=  %>"><%= "#{code}" %></a></td>
+        <td> <%= "(#{i+1}) #{msg}" %></a></td>
+        <td> <%= "#{@rule[stage][code][1]}" %></td>
+  </tr>   
+  </tbody> 
+       <%- } -%>
+     <%- } -%>
+  <%- } -%>
+</table>

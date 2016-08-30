@@ -1,0 +1,17 @@
+
+
+ <title>Index</title>
+
+<%- @index.each_key { |name| -%>
+
+<ul id="full_list" class="class">
+    <li class="r1" style="padding-left: 25px;">
+        <span class='object_link'>
+          <a href="<%= @index[name] %>" title="<%= name %>">
+          <%= name %>
+          </a>
+        </span>
+    </li>
+</ul>
+
+<%- } %>

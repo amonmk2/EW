@@ -1,0 +1,20 @@
+<head>
+<script src="scripts/shCore.js"></script>
+<script src="scripts/shBrushCpp.js"></script>
+<script src="scripts/shBrushDiff.js"></script>
+<script src="scripts/shBrushPlain.js"></script>
+<script src="scripts/shBrushBash.js"></script>
+<link rel="stylesheet" href="styles/shCoreEclipse.css">
+<script>SyntaxHighlighter.all();</script>
+</head>
+
+
+<%- @texts.each_key { |name| -%>
+
+<h1><%= name %></h1>
+<pre class="brush:plain;<%= @rep_option[name] %>" >
+<%= @texts[name] %>
+</pre>
+
+<%- } %>
+
